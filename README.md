@@ -1,1 +1,1 @@
-Scraper for [Golden Plains Shire] (https://www.goldenplains.vic.gov.au/) and scrapes [Golden Plain Shire Planning Applications](https://www.goldenplains.vic.gov.au/residents/my-home/planning-applications-currently-advertised)
+Scraper for [Golden Plains Shire](https://www.goldenplains.vic.gov.au/) and scrapes [Golden Plain Shire Planning Applications](https://www.goldenplains.vic.gov.au/residents/my-home/planning-applications-currently-advertised)
