@@ -1,1 +1,1 @@
-This is a scraper that runs on [Morph](https://morph.io). To get started [see the documentation](https://morph.io/documentation)
+Scraper for [Golden Plains Shire] (https://www.goldenplains.vic.gov.au/) and scrapes [Golden Plain Shire Planning Applications](https://www.goldenplains.vic.gov.au/residents/my-home/planning-applications-currently-advertised)
