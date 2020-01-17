@@ -1,12 +1,11 @@
-import requests
 import scraperwiki
 from bs4 import BeautifulSoup
 from datetime import date
 from datetime import datetime
 
 applications_url = 'https://www.goldenplains.vic.gov.au/residents/my-home/planning-applications-currently-advertised'
-html = requests.get(applications_url)
-page = BeautifulSoup(html.content, 'html.parser')
+html = scraperwiki.scrape(applications_url)
+page = BeautifulSoup(html, 'html.parser')
 
 for div in page.find_all('div', class_='accordion'):
   council_reference = div.find('h4').getText().split()[1]
