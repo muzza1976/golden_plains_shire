@@ -1,10 +1,10 @@
+os.environ["SCRAPERWIKI_DATABASE_NAME"] = "data.sqlite"
+
 import scraperwiki
 from bs4 import BeautifulSoup
 from datetime import date
 from datetime import datetime
 import os
-
-os.environ["SCRAPERWIKI_DATABASE_NAME"] = "data.sqlite"
 
 applications_url = 'https://www.goldenplains.vic.gov.au/residents/my-home/planning-applications-currently-advertised'
 html = scraperwiki.scrape(applications_url)
