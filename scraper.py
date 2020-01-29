@@ -33,7 +33,6 @@ for div in page.find_all('div', class_='accordion'):
       'on_notice_from' : on_notice_from,
       'on_notice_to' : on_notice_to,
       'info_url': applications_url,
-      'comment_url': applications_url,
       'date_scraped': date.today().isoformat(),
     }
 
