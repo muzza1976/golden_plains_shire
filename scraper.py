@@ -1,5 +1,5 @@
 import os
-os.environ["SCRAPERWIKI_DATABASE_NAME"] = "data.sqlite"
+os.environ["SCRAPERWIKI_DATABASE_NAME"] = "sqlite:///data.sqlite"
 
 import scraperwiki
 from bs4 import BeautifulSoup
