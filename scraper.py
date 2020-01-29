@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 from datetime import date
 from datetime import datetime
 
+os.environ["SCRAPERWIKI_DATABASE_NAME"] = "data.sqlite"
+
 applications_url = 'https://www.goldenplains.vic.gov.au/residents/my-home/planning-applications-currently-advertised'
 html = scraperwiki.scrape(applications_url)
 page = BeautifulSoup(html, 'html.parser')
@@ -34,4 +36,4 @@ for div in page.find_all('div', class_='accordion'):
       'date_scraped': date.today().isoformat(),
     }
 
-  scraperwiki.sqlite.save(unique_keys=['council_reference'], data=record)
+  scraperwiki.sqlite.save(unique_keys=['council_reference'], data=record, table_name="data")
